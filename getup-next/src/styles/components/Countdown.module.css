@@ -46,6 +46,22 @@
     text-transform: uppercase;
     transition: background-color 0.2s;
 }
-.countdownButton:hover {
+.countdownButton:not(:disabled):hover {
     background: var(--blue-dark);
+}
+
+.countdownButtonActive {
+    background: var(--red-dark);
+    color: var(--white);
+    transition: background-color 0.2s;
+}
+.countdownButtonActive:not(:disabled):hover {
+    background: var(--red);
+    color: var(--white);
+}
+
+.countdownButton:disabled {
+    background: var(--white);
+    color: var(--text);
+    cursor: not-allowed;
 }
