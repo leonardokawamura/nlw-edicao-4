@@ -29,7 +29,7 @@ body, input, button, textarea {
 }
 
 button {
-    outline: none;
+    /*outline: none;*/
     cursor: pointer;
 }
 
